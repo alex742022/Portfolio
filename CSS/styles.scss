@@ -2,6 +2,7 @@
 $colorTheme: #B38867;
 $colorTheme2: #735741;
 $colorTheme3: #906d52;
+$colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
 *{
     margin: 0;
     padding: 0;
@@ -91,7 +92,7 @@ $colorTheme3: #906d52;
 //Page2
 .page2 {
     width: 100%;
-    background: linear-gradient(90deg, rgba(115,87,65,1) 24%, rgba(144,109,82,1) 62%, rgba(161,122,92,1) 87%);
+    background: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
     position: relative;
     overflow: hidden;
     z-index: -2;
@@ -153,7 +154,7 @@ $colorTheme3: #906d52;
         .left-width{
             width: 300px;
             transition: all .7s .6s ease;
-            .poject-text-style-h2{
+            .project-text-style-h2{
                 margin-bottom: 20px;
                 font-size: 25px
             }
@@ -258,7 +259,51 @@ $colorTheme3: #906d52;
     }
 }
 footer{
-    background-color: $colorTheme2;
-    height: 500px;
+    background: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
     color: white;
+    padding-bottom: 50px;
+    .container5{
+        .contact-container{
+            display: flex;
+            justify-content: space-between;
+            .contact-left{
+                width: 48%;
+                form{
+                display: flex;
+                flex-direction: column;
+                }
+            }
+            .contact-left{
+                input, textarea{
+                    outline: none;
+                    padding: 17px;
+                    border: none;
+                    margin: 10px 0 20px 0;
+                    border-radius: 7px;
+                }
+                .submit{
+                    background-color: white;
+                    width: 110px;
+                    font-size: 14px;
+                    padding: 10px;
+                    border-radius: 7px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            .contact-right{
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                i{
+                    margin-top: 10px;
+                }
+                .details{
+                    margin-bottom: 20px;  
+                }
+            }
+        }
+    }
 }
+@import "./mediaquery";
