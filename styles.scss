@@ -16,7 +16,25 @@ $colorTheme3: #906d52;
     bottom: 0;
     right: 0;
     height: 50px;
-    background-color: transparent;
+    background: rgba(115,87,65,.7);
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    .navbar-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            list-style: none;
+            color: white;
+            li{
+                margin-left: 60px;
+            }
+        }
+    }
 }
 
 //Container style to all
