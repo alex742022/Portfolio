@@ -1,5 +1,6 @@
-window.addEventListener('scroll',(reveal) => {
-
+window.addEventListener('scroll',() => {
+    // var navBar = document.querySelector('.nav-bar');
+    // navBar.classList.toggle('nav-bar2', windo)
     var  reveals = document.querySelectorAll('.reveal, .reveal1, .reveal2');
     for (var i = 0; i < reveals.length; i++){
 
