@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-$colorTheme: #B38867;
-$colorTheme2: #735741;
-$colorTheme3: #906d52;
-$colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
+$colorTheme1: #772f1a;
+$colorTheme2: #eec170;
+$colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 100%);
 *{
     margin: 0;
     padding: 0;
@@ -10,39 +9,11 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
     font-family: 'Montserrat','Inter Tight', sans-serif;
     scroll-behavior: smooth;
 }
-.nav-bar{
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    background: rgba(115,87,65,.7);
-    z-index: 10;
-    backdrop-filter: blur(10px);
-    .navbar-content{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        justify-content: flex-end;
-        ul{
-            display: flex;
-            list-style: none;
-            color: white;
-            li{
-                margin-left: 60px;
-            }
-        }
-    }
-}
-
 //Container style to all
 .container{
     margin: 0 auto;
     max-width: 1200px;
-    width: 75%;
+    width: 78%;
 }
 //Title style to all
 .title-section{
@@ -73,6 +44,35 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
 
 //Page1
 .page1{
+    .nav-bar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        background: white;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 1px 9px -5px gray;
+        .navbar-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            justify-content: flex-end;
+            ul{
+                display: flex;
+                list-style: none;
+                color: $colorTheme1;
+                font-weight: 450;
+                li{
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
     .container1{
         height: 100vh;
         display: flex;
@@ -80,10 +80,19 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
         .text-content{
             margin-bottom: 30px;
             h1{
-                font-size: 50px;
+                font-size: 40px;
                 span{
-                    color: $colorTheme3;
-                }
+                    color: $colorTheme1;
+                }   
+            }
+            button{
+                margin-top: 20px;
+                background: $colorTheme3;
+                color: white;
+                padding: 10px 20px 10px 20px;
+                font-size: 20px;
+                border: none; 
+                border-radius: 6px;
             }
         }
     }
@@ -92,7 +101,7 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
 //Page2
 .page2 {
     width: 100%;
-    background: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
+    background: $colorTheme3;
     position: relative;
     overflow: hidden;
     z-index: -2;
@@ -128,7 +137,7 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
                     height: 390px;
                     object-fit: cover;
                     object-position: 50% 10%;
-                    box-shadow: 6px 4px 5px $colorTheme ;
+                    box-shadow: 6px 4px 5px $colorTheme2 ;
                     border-radius: 50%;
                 }
             }
@@ -156,47 +165,68 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
             transition: all .7s .6s ease;
             .project-text-style-h2{
                 margin-bottom: 20px;
-                font-size: 25px
+                font-size: 25px;
+                color: $colorTheme1;
             }
-            .project-btn{
+            .btn-container{
                 display: flex;
-                width: 120px;
-                height: 30px;
-                padding: 5px 0;
-                justify-content: center;
-                margin-top: 10px;
-                text-decoration: none;
-                font-weight: 700;
-                position: relative;
-                overflow: hidden;
-                background-color: transparent;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-image: conic-gradient($colorTheme 50deg, $colorTheme 120deg);
-                    transition: transform 1s ease;
-                }
-                &:hover::before{
-                    transform: rotate(-180deg);
-                }
-                &::after{
-                    content: "Source Code";
-                    width: 95%;
-                    height: 80%;
-                    position: absolute;
+                margin-top: 25px;
+                .project-btn{
                     display: flex;
-                    align-items: center;
+                    width: 120px;
+                    height: 30px;
+                    padding: 5px 0;
                     justify-content: center;
-                    color: black;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: white;
-                    color: $colorTheme;   
+                    text-decoration: none;
+                    font-weight: 700;
+                    position: relative;
+                    overflow: hidden;
+                    background-color: transparent;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: $colorTheme3;
+                        transition: transform 1s ease;
+                    }
+                    &:hover::before{
+                        transform: rotate(-180deg);
+                    }
+                    &::after{
+                        content: "Source Code";
+                        width: 95%;
+                        height: 80%;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: black;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: white;
+                        color: black;
+                        font-size: 14px;  
+                    }
+                }
+                button{
+                    width: 120px;
+                    height: 30px;
+                    padding: 5px 0;
+                    margin-left: 20px;
+                    border: none;
+                    color: white;
+                    font-size: 14px;
+                    cursor: pointer;
+                    background: $colorTheme3;
+                    border-radius: 6px;
+                    transition: transform .3s ease;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
                 }
             }
         }
@@ -259,7 +289,7 @@ $colorTheme4: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%
     }
 }
 footer{
-    background: linear-gradient(90deg, rgba(56,31,25,1) 21%, rgba(115,87,65,1) 88%);
+    background: $colorTheme1;
     color: white;
     padding-bottom: 50px;
     .container5{

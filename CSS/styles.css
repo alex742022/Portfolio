@@ -7,39 +7,10 @@
   scroll-behavior: smooth;
 }
 
-.nav-bar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 50px;
-  background: rgba(115, 87, 65, 0.7);
-  z-index: 10;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-.nav-bar .navbar-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  justify-content: flex-end;
-}
-.nav-bar .navbar-content ul {
-  display: flex;
-  list-style: none;
-  color: white;
-}
-.nav-bar .navbar-content ul li {
-  margin-left: 60px;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  width: 75%;
+  width: 78%;
 }
 
 .title-section {
@@ -71,6 +42,36 @@
   transform: none;
 }
 
+.page1 .nav-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  background: white;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 1px 9px -5px gray;
+}
+.page1 .nav-bar .navbar-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.page1 .nav-bar .navbar-content ul {
+  display: flex;
+  list-style: none;
+  color: #772f1a;
+  font-weight: 450;
+}
+.page1 .nav-bar .navbar-content ul li {
+  margin-left: 60px;
+}
 .page1 .container1 {
   height: 100vh;
   display: flex;
@@ -80,15 +81,24 @@
   margin-bottom: 30px;
 }
 .page1 .container1 .text-content h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .page1 .container1 .text-content h1 span {
-  color: #906d52;
+  color: #772f1a;
+}
+.page1 .container1 .text-content button {
+  margin-top: 20px;
+  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
 }
 
 .page2 {
   width: 100%;
-  background: linear-gradient(90deg, rgb(56, 31, 25) 21%, rgb(115, 87, 65) 88%);
+  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
   position: relative;
   overflow: hidden;
   z-index: -2;
@@ -125,7 +135,7 @@
      object-fit: cover;
   -o-object-position: 50% 10%;
      object-position: 50% 10%;
-  box-shadow: 6px 4px 5px #B38867;
+  box-shadow: 6px 4px 5px #eec170;
   border-radius: 50%;
 }
 .page2 .container2 .content2 .column-right2 {
@@ -149,34 +159,38 @@
 .page3 .project-flex-content .left-width .project-text-style-h2 {
   margin-bottom: 20px;
   font-size: 25px;
+  color: #772f1a;
 }
-.page3 .project-flex-content .left-width .project-btn {
+.page3 .project-flex-content .left-width .btn-container {
+  display: flex;
+  margin-top: 25px;
+}
+.page3 .project-flex-content .left-width .btn-container .project-btn {
   display: flex;
   width: 120px;
   height: 30px;
   padding: 5px 0;
   justify-content: center;
-  margin-top: 10px;
   text-decoration: none;
   font-weight: 700;
   position: relative;
   overflow: hidden;
   background-color: transparent;
 }
-.page3 .project-flex-content .left-width .project-btn::before {
+.page3 .project-flex-content .left-width .btn-container .project-btn::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: conic-gradient(#B38867 50deg, #B38867 120deg);
+  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
   transition: transform 1s ease;
 }
-.page3 .project-flex-content .left-width .project-btn:hover::before {
+.page3 .project-flex-content .left-width .btn-container .project-btn:hover::before {
   transform: rotate(-180deg);
 }
-.page3 .project-flex-content .left-width .project-btn::after {
+.page3 .project-flex-content .left-width .btn-container .project-btn::after {
   content: "Source Code";
   width: 95%;
   height: 80%;
@@ -189,7 +203,24 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  color: #B38867;
+  color: black;
+  font-size: 14px;
+}
+.page3 .project-flex-content .left-width .btn-container button {
+  width: 120px;
+  height: 30px;
+  padding: 5px 0;
+  margin-left: 20px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.page3 .project-flex-content .left-width .btn-container button:hover {
+  transform: scale(1.01);
 }
 .page3 .Pimage-style {
   width: 700px;
@@ -243,7 +274,7 @@
 }
 
 footer {
-  background: linear-gradient(90deg, rgb(56, 31, 25) 21%, rgb(115, 87, 65) 88%);
+  background: #772f1a;
   color: white;
   padding-bottom: 50px;
 }
@@ -294,6 +325,11 @@ footer .container5 .contact-container .contact-right .details {
   .page1 .container1 .text-content h1 {
     font-size: 20px;
   }
+  .page1 .container1 .text-content button {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 7px 13px 7px 13px;
+  }
   .page2 {
     padding-bottom: 100px;
   }
@@ -312,7 +348,7 @@ footer .container5 .contact-container .contact-right .details {
   }
   .page2 .container2 .content2 .column-right2 {
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
     text-align: justify;
   }
   .page3 .container3 .title-section3 {
@@ -324,19 +360,27 @@ footer .container5 .contact-container .contact-right .details {
     margin-bottom: 50px;
   }
   .page3 .container3 .project-flex-content .column-left3 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .page3 .container3 .project-flex-content .column-left3 .project-text-style-h2 {
     font-size: 17px;
   }
   .page3 .container3 .project-flex-content .column-left3 p {
-    font-size: 14px;
+    font-size: 13px;
   }
-  .page3 .container3 .project-flex-content .column-left3 .project-btn {
+  .page3 .container3 .project-flex-content .column-left3 .btn-container {
+    margin-bottom: 0px;
+  }
+  .page3 .container3 .project-flex-content .column-left3 .btn-container .project-btn {
     width: 100px;
     height: 25px;
   }
-  .page3 .container3 .project-flex-content .column-left3 .project-btn::after {
+  .page3 .container3 .project-flex-content .column-left3 .btn-container .project-btn::after {
+    font-size: 13px;
+  }
+  .page3 .container3 .project-flex-content .column-left3 .btn-container button {
+    width: 100px;
+    height: 25px;
     font-size: 13px;
   }
   .page3 .container3 .project-flex-content .Pimage-style {
