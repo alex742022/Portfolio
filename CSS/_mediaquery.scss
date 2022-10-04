@@ -120,9 +120,19 @@
                 .contact-left{
                     width: 100%;
                     margin-bottom: 50px;
+                    .submit{
+                        width: 110px;
+                        font-size: 14px;
+                    }
                 }
                 .contact-right{
                     width: 100%;
+                    span{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
                 }
                 // .contact-right{
                 //     width: 100%;
