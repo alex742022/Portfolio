@@ -65,10 +65,13 @@ $colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 1
             ul{
                 display: flex;
                 list-style: none;
-                color: $colorTheme1;
                 font-weight: 450;
-                li{
-                    margin-left: 60px;
+                a{
+                    text-decoration: none;
+                    color: $colorTheme1;    
+                    li{
+                        margin-left: 60px;
+                    }
                 }
             }
         }
@@ -124,6 +127,7 @@ $colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 1
     .container2{
         .title-section {
             color: white;
+            margin-top: 50px;
         }
         .content2{
             display: flex;
@@ -242,7 +246,7 @@ $colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 1
         .title-section3{
             color: black;
             margin-top: -100px;
-            padding-top: 50px;
+            padding: 100px 0 100px 0;
             z-index: 2;
         }
         .content3{
@@ -258,9 +262,13 @@ $colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 1
     }
 }
 .page4{
-    background-color: #f6f6f6;
+    background: $colorTheme3;
+    color: white;
     padding-bottom: 150px;
     .container4{
+        .title-section{
+            padding: 100px 0 100px 0;
+        }
         .skills-content{
             display: flex;
             justify-content: space-between;
