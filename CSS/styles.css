@@ -66,10 +66,13 @@
 .page1 .nav-bar .navbar-content ul {
   display: flex;
   list-style: none;
-  color: #772f1a;
   font-weight: 450;
 }
-.page1 .nav-bar .navbar-content ul li {
+.page1 .nav-bar .navbar-content ul a {
+  text-decoration: none;
+  color: #772f1a;
+}
+.page1 .nav-bar .navbar-content ul a li {
   margin-left: 60px;
 }
 .page1 .container1 {
@@ -120,6 +123,7 @@
 }
 .page2 .container2 .title-section {
   color: white;
+  margin-top: 50px;
 }
 .page2 .container2 .content2 {
   display: flex;
@@ -232,7 +236,7 @@
 .page3 .container3 .title-section3 {
   color: black;
   margin-top: -100px;
-  padding-top: 50px;
+  padding: 100px 0 100px 0;
   z-index: 2;
 }
 .page3 .container3 .content3 .column-right3 .img1, .page3 .container3 .content3 .column-right3 .img2, .page3 .container3 .content3 .column-right3 .img4, .page3 .container3 .content3 .column-right3 .img5, .page3 .container3 .content3 .column-right3 .img6, .page3 .container3 .content3 .column-right3 .img7 {
@@ -245,8 +249,12 @@
 }
 
 .page4 {
-  background-color: #f6f6f6;
+  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  color: white;
   padding-bottom: 150px;
+}
+.page4 .container4 .title-section {
+  padding: 100px 0 100px 0;
 }
 .page4 .container4 .skills-content {
   display: flex;
