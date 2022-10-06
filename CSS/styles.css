@@ -56,7 +56,7 @@
   box-shadow: 0 1px 9px -5px gray;
 }
 .page1 .nav-bar .navbar-content {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-items: center;
@@ -236,7 +236,6 @@
 .page3 .container3 .title-section3 {
   color: black;
   margin-top: -100px;
-  padding: 100px 0 100px 0;
   z-index: 2;
 }
 .page3 .container3 .content3 .column-right3 .img1, .page3 .container3 .content3 .column-right3 .img2, .page3 .container3 .content3 .column-right3 .img4, .page3 .container3 .content3 .column-right3 .img5, .page3 .container3 .content3 .column-right3 .img6, .page3 .container3 .content3 .column-right3 .img7 {
@@ -337,9 +336,119 @@ footer .container5 .contact-container .contact-right .details {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .page2 .container2 .content2 .column-right2 {
+    margin-left: 60px;
+  }
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 650px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 600px;
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .title-section {
+    font-size: 33px;
+  }
+  .page1 .nav-bar {
+    height: 45px;
+  }
+  .page1 .nav-bar .navbar-content ul a li {
+    font-size: 14px;
+  }
+  .page1 .container1 .text-content h1 {
+    font-size: 35px;
+  }
+  .page1 .container1 .text-content button {
+    width: 150px;
+    font-size: 16px;
+  }
+  .page2 .container2 .content2 .column-left2 img {
+    width: 330px;
+    height: 330px;
+  }
+  .page2 .container2 .content2 .column-right2 .text {
+    font-size: 14px;
+  }
+  .page3 .container3 .content3 .column-left3 h2 {
+    font-size: 18px;
+  }
+  .page3 .container3 .content3 .column-left3 p {
+    font-size: 14px;
+  }
+  .page4 .container4 .skills-content .column-left h2 {
+    font-size: 18px;
+  }
+  .page4 .container4 .skills-content .column-left p {
+    font-size: 14px;
+  }
+  .page4 .container4 .skills-content .column-right .img-container img {
+    height: 70px;
+  }
+  footer .container5 .contact-container .contact-left form {
+    font-size: 14px;
+  }
+  footer .container5 .contact-container .contact-left form .submit {
+    font-size: 15px;
+  }
+  footer .container5 .contact-container .contact-right span {
+    font-size: 14px;
+  }
+  footer .container5 .contact-container .contact-right i {
+    font-size: 25px;
+  }
+  footer .container5 .contact-container .contact-right label {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 550px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 500px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .container {
+    width: 84%;
+  }
+  .page2 .container2 .content2 .column-left2 img {
+    width: 250px;
+    height: 250px;
+  }
+  .page3 .container3 .content3 .column-left3 {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .page3 .container3 .content3 {
+    flex-direction: column;
+  }
+  .page3 .container3 .content3 .column-right3 {
+    align-self: center;
+    margin-top: 30px;
+  }
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 650px;
+    height: 350px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .container {
     width: 80%;
+  }
+  .title-section {
+    font-size: 20px;
   }
   .page1 .container1 .text-content h1 {
     font-size: 20px;
@@ -347,13 +456,14 @@ footer .container5 .contact-container .contact-right .details {
   .page1 .container1 .text-content button {
     font-size: 13px;
     margin-top: 10px;
-    padding: 7px 13px 7px 13px;
+    padding: 7px 0px 7px 0px;
+    width: 120px;
   }
   .page2 {
     padding-bottom: 100px;
   }
   .page2 .container2 .title-section {
-    font-size: 20px;
+    padding-top: 20px;
   }
   .page2 .container2 .content2 {
     flex-direction: column;
@@ -366,13 +476,16 @@ footer .container5 .contact-container .contact-right .details {
     height: 200px;
   }
   .page2 .container2 .content2 .column-right2 {
+    margin-left: 0px;
     width: 100%;
     font-size: 13px;
     text-align: justify;
+    font-size: 12px;
   }
   .page3 .container3 .title-section3 {
     font-size: 20px;
-    margin-top: -50px;
+    margin-top: -60px;
+    padding-top: 70px;
   }
   .page3 .container3 .project-flex-content {
     flex-direction: column;
@@ -402,19 +515,22 @@ footer .container5 .contact-container .contact-right .details {
     height: 25px;
     font-size: 13px;
   }
-  .page3 .container3 .project-flex-content .Pimage-style {
-    width: 100%;
+  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
+    width: 380px;
     height: 200px;
   }
-  .page4 .title-section {
-    font-size: 20px;
+  .page4 {
+    padding-bottom: 50px;
+  }
+  .page4 .container4 .title-section {
+    padding: 70px 0 50px 0;
   }
   .page4 .container4 .skills-content {
     flex-direction: column;
   }
   .page4 .container4 .skills-content .column-left {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .page4 .container4 .skills-content .column-left h2 {
     font-size: 17px;
@@ -430,8 +546,8 @@ footer .container5 .contact-container .contact-right .details {
   .page4 .container4 .skills-content .column-right .img-container img {
     height: 50px;
   }
-  footer .container5 .title-section {
-    font-size: 20px;
+  footer {
+    padding-top: 20px;
   }
   footer .container5 .contact-container {
     flex-direction: column;
@@ -453,5 +569,26 @@ footer .container5 .contact-container .contact-right .details {
   }
   footer .container5 .contact-container .contact-right i {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .page2 .container2 .content2 .column-right2 .text {
+    font-size: 12px;
+  }
+  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
+    width: 340px;
+    height: 190px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
+    width: 310px;
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
+    width: 290px;
+    height: 160px;
   }
 }/*# sourceMappingURL=styles.css.map */
