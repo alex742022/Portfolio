@@ -101,7 +101,7 @@
 
 .page2 {
   width: 100%;
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: #772f1a;
   position: relative;
   overflow: hidden;
   z-index: -2;
@@ -139,7 +139,6 @@
      object-fit: cover;
   -o-object-position: 50% 10%;
      object-position: 50% 10%;
-  box-shadow: 6px 4px 5px #eec170;
   border-radius: 50%;
 }
 .page2 .container2 .content2 .column-right2 {
@@ -148,7 +147,7 @@
 }
 .page2 .container2 .content2 .column-right2 .text {
   line-height: 25px;
-  text-shadow: 0 0 1px black;
+  font-weight: 300;
 }
 
 .page3 .project-flex-content {
@@ -249,7 +248,7 @@
 }
 
 .page4 {
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: #772f1a;
   color: white;
   padding-bottom: 150px;
 }
@@ -268,6 +267,7 @@
 }
 .page4 .container4 .skills-content .column-left p {
   line-height: 25px;
+  font-weight: 300;
 }
 .page4 .container4 .skills-content .column-right {
   width: 60%;
@@ -307,7 +307,7 @@ footer .container5 .contact-container .contact-left input, footer .container5 .c
   border-bottom: 2px solid #772f1a;
 }
 footer .container5 .contact-container .contact-left .submit {
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: linear-gradient(90deg, rgb(238, 193, 112) 0%, rgb(119, 47, 26) 100%);
   width: 130px;
   font-size: 18px;
   padding: 9px;
@@ -318,7 +318,7 @@ footer .container5 .contact-container .contact-left .submit {
   cursor: pointer;
 }
 footer .container5 .contact-container .contact-left .submit i {
-  color: #772f1a;
+  color: white;
 }
 footer .container5 .contact-container .contact-right {
   width: 45%;
@@ -452,10 +452,10 @@ footer .container5 .contact-container .contact-right .details {
     font-size: 20px;
   }
   .page1 .container1 .text-content h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .page1 .container1 .text-content button {
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 10px;
     padding: 7px 0px 7px 0px;
     width: 120px;
@@ -573,8 +573,21 @@ footer .container5 .contact-container .contact-right .details {
   }
 }
 @media only screen and (max-width: 480px) {
+  .page1 .container1 .text-content h1 {
+    font-size: 23px;
+    width: 250px;
+  }
   .page2 .container2 .content2 .column-right2 .text {
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .page4 {
+    padding-bottom: 50px;
+  }
+  .page4 .container4 .skills-content {
+    flex-direction: column;
+  }
+  .page4 .container4 .skills-content .column-left p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 440px) {
