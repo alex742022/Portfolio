@@ -236,6 +236,7 @@
 .page3 .container3 .title-section3 {
   color: black;
   margin-top: -100px;
+  padding: 100px 0 100px 0;
   z-index: 2;
 }
 .page3 .container3 .content3 .column-right3 .img1, .page3 .container3 .content3 .column-right3 .img2, .page3 .container3 .content3 .column-right3 .img4, .page3 .container3 .content3 .column-right3 .img5, .page3 .container3 .content3 .column-right3 .img6, .page3 .container3 .content3 .column-right3 .img7 {
@@ -445,7 +446,7 @@ footer .container5 .contact-container .contact-right .details {
 }
 @media only screen and (max-width: 500px) {
   .container {
-    width: 80%;
+    width: 84%;
   }
   .title-section {
     font-size: 20px;
@@ -516,8 +517,8 @@ footer .container5 .contact-container .contact-right .details {
     font-size: 13px;
   }
   .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
-    width: 380px;
-    height: 200px;
+    width: 400px;
+    height: 220px;
   }
   .page4 {
     padding-bottom: 50px;
@@ -575,20 +576,16 @@ footer .container5 .contact-container .contact-right .details {
   .page2 .container2 .content2 .column-right2 .text {
     font-size: 12px;
   }
+}
+@media only screen and (max-width: 440px) {
   .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
     width: 340px;
     height: 190px;
   }
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 400px) {
   .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
     width: 310px;
     height: 170px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
-    width: 290px;
-    height: 160px;
   }
 }/*# sourceMappingURL=styles.css.map */
