@@ -227,11 +227,8 @@
   transform: scale(1.01);
 }
 .page3 .Pimage-style {
-  width: 700px;
-  height: 398px;
+  width: 800px;
   box-shadow: 0 0 7px -3px gray;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .page3 .container3 .title-section3 {
   color: black;
