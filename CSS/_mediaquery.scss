@@ -1,17 +1,397 @@
+@media only screen and (max-width: 0px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+        .container1{
+            .text-content{
+                h1{
+                    span{
+
+                    }
+                }
+                button{
+
+                }
+            }
+        }
+    }
+    .page2{
+        .container2{
+            h1{
+
+            }
+            .content2{
+                .column-left2{
+                    img{
+
+                    }
+                }
+                .column-right2{
+                    .text{
+
+                    }
+                }
+            }
+        }
+    }
+    .page3{
+        .container3{
+            h1{
+
+            }
+            .content3{
+                .column-left3{
+                    h2{
+
+                    }
+                    p{
+
+                    }
+                    .btn-container{
+                        a{
+
+                        }
+                        button{
+
+                        }
+                    }
+                }
+                .column-right3{
+                    .Pimage-style{
+                
+                    }
+                    .img1{
+
+                    }
+                    .img2{
+                        
+                    }
+                    .img3{
+                        
+                    }
+                    .img4{
+                        
+                    }
+                    .img5{
+                        
+                    }
+                    .img6{
+                        
+                    }
+                    .img7{
+                        
+                    }
+                    .img8{
+                        
+                    }
+                }
+            }
+        }
+    }
+    .page4{
+        .container4{
+            h1{
+
+            }
+            .skills-content{
+                .column-left{
+                    h2{
+
+                    }
+                    p{
+
+                    }
+                }
+                .column-right{
+                    .img-container{
+                        img{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .container5{
+            h1{
+
+            }
+            .contact-container{
+                .contact-left{
+                    form{
+                        label{
+
+                        }
+                        input{
+                        
+                        }
+                        textarea{
+
+                        }
+                        .submit{
+
+                        }
+                    }
+                }
+                .contact-right{
+                   span{
+
+                   }
+                   i{
+
+                   }
+                   label{
+
+                   }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1300px){
+    .page2{
+        .container2{
+            .content2{
+                .column-right2{
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    .page3{
+        .container3{
+            .content3{
+                .column-right3{
+                    .Pimage-style{
+                        width: 650px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1250px){
+    .page3{
+        .container3{
+            .content3{
+                .column-right3{
+                    .Pimage-style{
+                        width: 600px;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    .title-section{
+        font-size: 33px;
+    }
+    .page1{
+        .nav-bar{
+            height: 45px;
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .container1{
+            .text-content{
+                h1{
+                    font-size: 35px;
+                }
+                button{
+                    width: 150px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .page2{
+        .container2{
+            .content2{
+                .column-left2{
+                    img{
+                        width: 330px;
+                        height: 330px;
+                    }
+                }
+                .column-right2{
+                    .text{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .page3{
+        .container3{
+            .content3{
+                .column-left3{
+                    h2{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .page4{
+        .container4{
+            .skills-content{
+                .column-left{
+                    h2{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .column-right{
+                    .img-container{
+                        img{
+                            height: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .container5{
+            .contact-container{
+                .contact-left{
+                    form{
+                        font-size: 14px;
+                        .submit{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .contact-right{
+                    span{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 25px;
+                    }
+                    label{ 
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1180px){
+    .page3{
+        .container3{
+            .content3{
+                .column-right3{
+                    .Pimage-style{
+                        width: 550px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1100px){
+    .page3{
+        .container3{
+            .content3{
+                .column-right3{
+                    .Pimage-style{
+                        width: 500px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1040px){
+    .container{
+        width: 84%;
+    }
+    .page2{
+        .container2{
+            .content2{
+                .column-left2{
+                    img{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .page3{
+        .container3{
+            .content3{
+                .column-left3{
+                    width: 250px;
+                    }
+                }
+        }
+    }
+}
+@media only screen and (max-width: 930px){
+    .page3{
+        .container3{
+            .content3{
+                flex-direction: column;
+                .column-right3{
+                    align-self: center;
+                    margin-top: 30px;
+                    .Pimage-style{
+                        width: 650px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 500px){
     .container{
-        width: 80%;
+        width: 84%;
+    }
+    .title-section{
+        font-size: 20px;
     }
     .page1{
         .container1{
             .text-content{
                 h1{
-                    font-size: 20px;
+                    font-size: 25px;
                 }
                 button{
-                    font-size: 13px;
+                    font-size: 14px;
                     margin-top: 10px;
-                    padding: 7px 13px 7px 13px;
+                    padding: 7px 0px 7px 0px;
+                    width: 120px;
                 }
             }
         }
@@ -20,7 +400,7 @@
         padding-bottom: 100px;
         .container2{
             .title-section{
-                font-size: 20px;
+                padding-top: 20px;
             }
             .content2{
                 flex-direction: column;
@@ -32,9 +412,11 @@
                     }
                 }
                 .column-right2{
+                    margin-left: 0px;
                     width: 100%;
                     font-size: 13px;
                     text-align: justify;
+                    font-size: 12px;
                 }
             }
         }
@@ -43,7 +425,8 @@
         .container3{
             .title-section3{
                 font-size: 20px;
-                margin-top: -50px;
+                margin-top: -60px;
+                padding-top: 70px;
             }
             .project-flex-content{
                 flex-direction: column;
@@ -72,23 +455,26 @@
                         }
                     }
                 }
-                .Pimage-style{
-                    width: 100%;
-                    height: 200px;
+                .column-right3{
+                    .Pimage-style{
+                        width: 400px;
+                        height: 220px;
+                    }
                 }
             }
         }
     }
     .page4{
-        .title-section{
-            font-size: 20px;
-        }
+        padding-bottom: 50px;
         .container4{
+            .title-section{
+                padding: 70px 0 50px 0;
+            }
             .skills-content{
                 flex-direction: column;
                 .column-left{
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     h2{
                         font-size: 17px;
                         text-align: center;
@@ -110,10 +496,8 @@
         }
     }
     footer{
+        padding-top: 20px;
         .container5{
-            .title-section{
-                font-size: 20px;
-            }
             .contact-container{
                 flex-direction: column;
                 font-size: 14px;
@@ -134,18 +518,74 @@
                         font-size: 18px;
                     }
                 }
-                // .contact-right{
-                //     width: 100%;
-                //     justify-content: center;
-                //     align-items: center;
-                //     justify-items: center;
-                //     .details, .social{
-                //         display: flex;
-                //         flex-direction: column;
-                //         align-items: center;
-                //     }
-                // }
+               
             }
         }    
+    }
+}
+@media only screen and (max-width: 480px){
+    .page1{
+        .container1{
+            .text-content{
+                h1{
+                    font-size: 23px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .page2{
+        .container2{
+            .content2{
+                .column-right2{
+                    .text{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .page4{
+        padding-bottom: 50px;
+        .container4{
+            .skills-content{
+                flex-direction: column;
+                .column-left{ 
+                    p{
+                        font-size: 13px;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 440px){
+    .page3 {
+        .container3{
+            .project-flex-content{
+                .column-right3{
+                    .Pimage-style{
+                        width: 340px;
+                        height: 190px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .page3 {
+        .container3{
+            .project-flex-content{
+                .column-right3{
+                    .Pimage-style{
+                        width: 310px;
+                        height: 170px;
+                    }
+                }
+            }
+        }
     }
 }
