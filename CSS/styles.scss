@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-$colorTheme1: #772f1a;
-$colorTheme2: #eec170;
-$colorTheme3: linear-gradient(90deg, rgba(119,47,26,1) 4%, rgba(238,193,112,1) 100%);
-$colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 100%);
+$colorTheme1: #008726;
+$colorTheme2: #94a187;
+$colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%);
 *{
     margin: 0;
     padding: 0;
@@ -69,9 +68,10 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                 font-weight: 450;
                 a{
                     text-decoration: none;
-                    color: $colorTheme1;    
+                    color: black;    
                     li{
                         margin-left: 60px;
+                        font-weight: 500;
                     }
                 }
             }
@@ -84,19 +84,26 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
         .text-content{
             margin-bottom: 30px;
             h1{
-                font-size: 40px;
+                font-size: 43px;
+                margin-top: 180px;
                 span{
                     color: $colorTheme1;
                 }   
+            }
+            p{
+                font-size: 18px;
+                width: 550px;
+                margin-top: 10px;
             }
             button{
                 margin-top: 20px;
                 background: $colorTheme3;
                 color: white;
-                padding: 10px 20px 10px 20px;
+                padding: 15px 20px 15px 20px;
                 font-size: 20px;
                 border: none; 
                 border-radius: 6px;
+                width: 300px;
             }
         }
     }
@@ -106,11 +113,11 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
 .page2 {
     width: 100%;
     background: $colorTheme1;
-    position: relative;
+    color: white;
     overflow: hidden;
     z-index: -2;
     padding-bottom: 150px;
-
+    position: relative;
     &::after{
         content: "";
         position: absolute;
@@ -127,14 +134,12 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
     }
     .container2{
         .title-section {
-            color: white;
             margin-top: 50px;
         }
         .content2{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            color: white;
             overflow: hidden;
             .column-left2{
                 img{
@@ -150,8 +155,7 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                 width: 550px;
                 .text{
                     line-height: 25px;
-                    font-weight: 300;
-                    // text-shadow: 0 0 1px black;
+                    font-weight: 350;
                 }
             }
         }
@@ -171,7 +175,6 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
             .project-text-style-h2{
                 margin-bottom: 20px;
                 font-size: 25px;
-                color: $colorTheme1;
             }
             .btn-container{
                 display: flex;
@@ -179,7 +182,7 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                 .project-btn{
                     display: flex;
                     width: 120px;
-                    height: 30px;
+                    height: 35px;
                     padding: 5px 0;
                     justify-content: center;
                     text-decoration: none;
@@ -219,14 +222,14 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                 }
                 button{
                     width: 120px;
-                    height: 30px;
+                    height: 35px;
                     padding: 5px 0;
                     margin-left: 20px;
                     border: none;
                     color: white;
                     font-size: 14px;
                     cursor: pointer;
-                    background: $colorTheme3;
+                    background: $colorTheme1;
                     border-radius: 6px;
                     transition: transform .3s ease;
                     &:hover{
@@ -279,7 +282,7 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                 }
                 p{
                     line-height: 25px;
-                    font-weight: 300;
+                    font-weight: 350;
                 }
             }
             .column-right{
@@ -290,6 +293,7 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
                     margin-bottom: 20px;
                     img{
                         height: 90px;
+                        filter: drop-shadow(1px 1px 1px black);
                     }
                 }
             }
@@ -298,7 +302,7 @@ $colorTheme4: linear-gradient(90deg, rgba(238,193,112,1) 0%, rgba(119,47,26,1) 1
 }
 footer{
     background: white;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     .container5{
         .contact-container{
             display: flex;
@@ -319,10 +323,10 @@ footer{
                     padding: 17px;
                     border: none;
                     margin: 10px 0 20px 0;
-                    border-bottom: 2px solid #772f1a;
+                    border-bottom: 2px solid black;
                 }
                 .submit{
-                    background: $colorTheme4;
+                    background: $colorTheme3;
                     width: 130px;
                     font-size: 18px;
                     padding: 9px;
@@ -345,11 +349,14 @@ footer{
                 }
                 i{
                     margin: 20px 10px 0 0;
-                    color: $colorTheme1;
                     font-size: 30px;
+                    color: rgba(0,0,0,.6)
                 }
                 .details{
                     margin-bottom: 30px;  
+                }
+                label{
+                    font-weight: 500;
                 }
             }
         }

@@ -70,10 +70,11 @@
 }
 .page1 .nav-bar .navbar-content ul a {
   text-decoration: none;
-  color: #772f1a;
+  color: black;
 }
 .page1 .nav-bar .navbar-content ul a li {
   margin-left: 60px;
+  font-weight: 500;
 }
 .page1 .container1 {
   height: 100vh;
@@ -84,28 +85,36 @@
   margin-bottom: 30px;
 }
 .page1 .container1 .text-content h1 {
-  font-size: 40px;
+  font-size: 43px;
+  margin-top: 180px;
 }
 .page1 .container1 .text-content h1 span {
-  color: #772f1a;
+  color: #008726;
+}
+.page1 .container1 .text-content p {
+  font-size: 18px;
+  width: 550px;
+  margin-top: 10px;
 }
 .page1 .container1 .text-content button {
   margin-top: 20px;
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
   color: white;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 20px 15px 20px;
   font-size: 20px;
   border: none;
   border-radius: 6px;
+  width: 300px;
 }
 
 .page2 {
   width: 100%;
-  background: #772f1a;
-  position: relative;
+  background: #008726;
+  color: white;
   overflow: hidden;
   z-index: -2;
   padding-bottom: 150px;
+  position: relative;
 }
 .page2::after {
   content: "";
@@ -122,14 +131,12 @@
   z-index: -1;
 }
 .page2 .container2 .title-section {
-  color: white;
   margin-top: 50px;
 }
 .page2 .container2 .content2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
   overflow: hidden;
 }
 .page2 .container2 .content2 .column-left2 img {
@@ -147,7 +154,7 @@
 }
 .page2 .container2 .content2 .column-right2 .text {
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 .page3 .project-flex-content {
@@ -162,7 +169,6 @@
 .page3 .project-flex-content .left-width .project-text-style-h2 {
   margin-bottom: 20px;
   font-size: 25px;
-  color: #772f1a;
 }
 .page3 .project-flex-content .left-width .btn-container {
   display: flex;
@@ -171,7 +177,7 @@
 .page3 .project-flex-content .left-width .btn-container .project-btn {
   display: flex;
   width: 120px;
-  height: 30px;
+  height: 35px;
   padding: 5px 0;
   justify-content: center;
   text-decoration: none;
@@ -187,7 +193,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
   transition: transform 1s ease;
 }
 .page3 .project-flex-content .left-width .btn-container .project-btn:hover::before {
@@ -211,14 +217,14 @@
 }
 .page3 .project-flex-content .left-width .btn-container button {
   width: 120px;
-  height: 30px;
+  height: 35px;
   padding: 5px 0;
   margin-left: 20px;
   border: none;
   color: white;
   font-size: 14px;
   cursor: pointer;
-  background: linear-gradient(90deg, rgb(119, 47, 26) 4%, rgb(238, 193, 112) 100%);
+  background: #008726;
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
@@ -245,7 +251,7 @@
 }
 
 .page4 {
-  background: #772f1a;
+  background: #008726;
   color: white;
   padding-bottom: 150px;
 }
@@ -264,7 +270,7 @@
 }
 .page4 .container4 .skills-content .column-left p {
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 350;
 }
 .page4 .container4 .skills-content .column-right {
   width: 60%;
@@ -276,11 +282,12 @@
 }
 .page4 .container4 .skills-content .column-right .img-container img {
   height: 90px;
+  filter: drop-shadow(1px 1px 1px black);
 }
 
 footer {
   background: white;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 footer .container5 .contact-container {
   display: flex;
@@ -301,10 +308,10 @@ footer .container5 .contact-container .contact-left input, footer .container5 .c
   padding: 17px;
   border: none;
   margin: 10px 0 20px 0;
-  border-bottom: 2px solid #772f1a;
+  border-bottom: 2px solid black;
 }
 footer .container5 .contact-container .contact-left .submit {
-  background: linear-gradient(90deg, rgb(238, 193, 112) 0%, rgb(119, 47, 26) 100%);
+  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
   width: 130px;
   font-size: 18px;
   padding: 9px;
@@ -327,275 +334,111 @@ footer .container5 .contact-container .contact-right span {
 }
 footer .container5 .contact-container .contact-right i {
   margin: 20px 10px 0 0;
-  color: #772f1a;
   font-size: 30px;
+  color: rgba(0, 0, 0, 0.6);
 }
 footer .container5 .contact-container .contact-right .details {
   margin-bottom: 30px;
 }
+footer .container5 .contact-container .contact-right label {
+  font-weight: 500;
+}
 
+@media only screen and (max-width: 1440px) {
+  .page3 .container3 .content3 {
+    flex-direction: column;
+  }
+  .page3 .container3 .content3 .column-left3 {
+    margin-bottom: 50px;
+  }
+  .page3 .container3 .content3 .column-right3 {
+    align-self: center;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .page2 .container2 .content2 .column-right2 {
     margin-left: 60px;
   }
-  .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 650px;
-    height: 350px;
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 600px;
-    height: 320px;
-  }
 }
 @media only screen and (max-width: 1200px) {
+  .page4 {
+    padding-bottom: 100px;
+  }
+  .page4 .container4 .skills-content {
+    flex-direction: column;
+  }
+  .page4 .container4 .skills-content .column-left {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .page4 .container4 .skills-content .column-right {
+    align-self: center;
+  }
+  .page4 .container4 .skills-content .column-right .img-container img {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 1040px) {
   .title-section {
-    font-size: 33px;
+    font-size: 35px;
   }
-  .page1 .nav-bar {
-    height: 45px;
-  }
-  .page1 .nav-bar .navbar-content ul a li {
-    font-size: 14px;
+  .container {
+    width: 84%;
   }
   .page1 .container1 .text-content h1 {
     font-size: 35px;
   }
-  .page1 .container1 .text-content button {
-    width: 150px;
+  .page1 .container1 .text-content p {
     font-size: 16px;
   }
   .page2 .container2 .content2 .column-left2 img {
-    width: 330px;
-    height: 330px;
-  }
-  .page2 .container2 .content2 .column-right2 .text {
-    font-size: 14px;
-  }
-  .page3 .container3 .content3 .column-left3 h2 {
-    font-size: 18px;
-  }
-  .page3 .container3 .content3 .column-left3 p {
-    font-size: 14px;
-  }
-  .page4 .container4 .skills-content .column-left h2 {
-    font-size: 18px;
-  }
-  .page4 .container4 .skills-content .column-left p {
-    font-size: 14px;
-  }
-  .page4 .container4 .skills-content .column-right .img-container img {
-    height: 70px;
-  }
-  footer .container5 .contact-container .contact-left form {
-    font-size: 14px;
-  }
-  footer .container5 .contact-container .contact-left form .submit {
-    font-size: 15px;
-  }
-  footer .container5 .contact-container .contact-right span {
-    font-size: 14px;
-  }
-  footer .container5 .contact-container .contact-right i {
-    font-size: 25px;
-  }
-  footer .container5 .contact-container .contact-right label {
-    font-size: 14px;
-  }
-}
-@media only screen and (max-width: 1180px) {
-  .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 550px;
+    width: 300px;
     height: 300px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 500px;
-    height: 280px;
-  }
-}
-@media only screen and (max-width: 1040px) {
-  .container {
-    width: 84%;
-  }
-  .page2 .container2 .content2 .column-left2 img {
-    width: 250px;
-    height: 250px;
   }
   .page3 .container3 .content3 .column-left3 {
     width: 250px;
   }
 }
 @media only screen and (max-width: 930px) {
-  .page3 .container3 .content3 {
-    flex-direction: column;
-  }
-  .page3 .container3 .content3 .column-right3 {
-    align-self: center;
-    margin-top: 30px;
-  }
-  .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 650px;
-    height: 350px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .container {
-    width: 84%;
-  }
-  .title-section {
-    font-size: 20px;
-  }
-  .page1 .container1 .text-content h1 {
-    font-size: 25px;
-  }
-  .page1 .container1 .text-content button {
-    font-size: 14px;
-    margin-top: 10px;
-    padding: 7px 0px 7px 0px;
-    width: 120px;
-  }
-  .page2 {
-    padding-bottom: 100px;
-  }
-  .page2 .container2 .title-section {
-    padding-top: 20px;
-  }
   .page2 .container2 .content2 {
     flex-direction: column;
   }
   .page2 .container2 .content2 .column-left2 {
-    margin-bottom: 20px;
-  }
-  .page2 .container2 .content2 .column-left2 img {
-    width: 200px;
-    height: 200px;
+    margin-bottom: 50px;
   }
   .page2 .container2 .content2 .column-right2 {
+    align-self: flex-start;
+    width: 90%;
     margin-left: 0px;
-    width: 100%;
-    font-size: 13px;
-    text-align: justify;
-    font-size: 12px;
+    font-size: 15px;
   }
-  .page3 .container3 .title-section3 {
+  .page3 .container3 .content3 .column-left3 h2 {
     font-size: 20px;
-    margin-top: -60px;
-    padding-top: 70px;
   }
-  .page3 .container3 .project-flex-content {
-    flex-direction: column;
-    margin-bottom: 50px;
+  .page3 .container3 .content3 .column-left3 p {
+    font-size: 15px;
   }
-  .page3 .container3 .project-flex-content .column-left3 {
-    margin-bottom: 25px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 .project-text-style-h2 {
-    font-size: 17px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 p {
-    font-size: 13px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 .btn-container {
-    margin-bottom: 0px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 .btn-container .project-btn {
-    width: 100px;
-    height: 25px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 .btn-container .project-btn::after {
-    font-size: 13px;
-  }
-  .page3 .container3 .project-flex-content .column-left3 .btn-container button {
-    width: 100px;
-    height: 25px;
-    font-size: 13px;
-  }
-  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
-    width: 400px;
-    height: 220px;
-  }
-  .page4 {
-    padding-bottom: 50px;
-  }
-  .page4 .container4 .title-section {
-    padding: 70px 0 50px 0;
-  }
-  .page4 .container4 .skills-content {
-    flex-direction: column;
-  }
-  .page4 .container4 .skills-content .column-left {
-    width: 100%;
-    margin-bottom: 30px;
+  .page3 .container3 .content3 .column-right3 .Pimage-style {
+    width: 720px;
   }
   .page4 .container4 .skills-content .column-left h2 {
-    font-size: 17px;
-    text-align: center;
+    font-size: 20px;
   }
   .page4 .container4 .skills-content .column-left p {
-    font-size: 14px;
-    text-align: justify;
+    font-size: 15px;
   }
-  .page4 .container4 .skills-content .column-right {
-    width: 100%;
-  }
-  .page4 .container4 .skills-content .column-right .img-container img {
-    height: 50px;
-  }
-  footer {
-    padding-top: 20px;
-  }
-  footer .container5 .contact-container {
-    flex-direction: column;
-    font-size: 14px;
-  }
-  footer .container5 .contact-container .contact-left {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  footer .container5 .contact-container .contact-left .submit {
-    width: 110px;
-    font-size: 14px;
-  }
-  footer .container5 .contact-container .contact-right {
-    width: 100%;
-  }
-  footer .container5 .contact-container .contact-right span {
-    font-size: 14px;
+  footer .container5 .contact-container .contact-left form .submit {
+    font-size: 15px;
+    width: 140px;
+    height: 35px;
   }
   footer .container5 .contact-container .contact-right i {
+    font-size: 25px;
+  }
+  footer .container5 .contact-container .contact-right span {
     font-size: 18px;
   }
-}
-@media only screen and (max-width: 480px) {
-  .page1 .container1 .text-content h1 {
-    font-size: 23px;
-    width: 250px;
-  }
-  .page2 .container2 .content2 .column-right2 .text {
-    font-size: 13px;
-  }
-  .page4 {
-    padding-bottom: 50px;
-  }
-  .page4 .container4 .skills-content {
-    flex-direction: column;
-  }
-  .page4 .container4 .skills-content .column-left p {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
-    width: 340px;
-    height: 190px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .page3 .container3 .project-flex-content .column-right3 .Pimage-style {
-    width: 310px;
-    height: 170px;
+  footer .container5 .contact-container .contact-right label {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=styles.css.map */
