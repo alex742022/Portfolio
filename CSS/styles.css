@@ -524,7 +524,10 @@ footer .container5 .contact-container .contact-right label {
     padding-bottom: 50px;
   }
   .page3 .container3 .title-section3 {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+  }
+  .page3 .container3 .content3 {
+    margin-bottom: 60px;
   }
   .page3 .container3 .content3 .column-left3 h2 {
     font-size: 20px;
