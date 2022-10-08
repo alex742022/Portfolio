@@ -33,7 +33,7 @@
 
 .reveal2 {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateY(30px);
   transition: all 0.7s 0.2s ease-in-out;
 }
 
@@ -87,9 +87,16 @@
 .page1 .container1 .text-content h1 {
   font-size: 43px;
   margin-top: 180px;
-}
-.page1 .container1 .text-content h1 span {
   color: #008726;
+}
+.page1 .container1 .text-content h1::before {
+  content: "Hi, my name is \a";
+  color: black;
+}
+.page1 .container1 .text-content h1::after {
+  content: "\a Front End Developer";
+  white-space: pre;
+  color: black;
 }
 .page1 .container1 .text-content p {
   font-size: 18px;
@@ -112,14 +119,13 @@
   background: #008726;
   color: white;
   overflow: hidden;
-  z-index: -2;
   padding-bottom: 150px;
   position: relative;
 }
 .page2::after {
   content: "";
   position: absolute;
-  height: 30rem;
+  height: 31rem;
   left: -5%;
   right: -5%;
   bottom: 0;
@@ -128,7 +134,6 @@
   transform-origin: 0 0;
   transform: rotateZ(-6deg);
   color: black;
-  z-index: -1;
 }
 .page2 .container2 .title-section {
   margin-top: 50px;
@@ -239,7 +244,6 @@
   color: black;
   margin-top: -100px;
   padding: 100px 0 100px 0;
-  z-index: 2;
 }
 .page3 .container3 .content3 .column-right3 .img1, .page3 .container3 .content3 .column-right3 .img2, .page3 .container3 .content3 .column-right3 .img4, .page3 .container3 .content3 .column-right3 .img5, .page3 .container3 .content3 .column-right3 .img6, .page3 .container3 .content3 .column-right3 .img7 {
   -o-object-position: 100% 0%;
@@ -419,13 +423,16 @@ footer .container5 .contact-container .contact-right label {
     font-size: 15px;
   }
   .page3 .container3 .content3 .column-right3 .Pimage-style {
-    width: 720px;
+    width: 100%;
   }
   .page4 .container4 .skills-content .column-left h2 {
     font-size: 20px;
   }
   .page4 .container4 .skills-content .column-left p {
     font-size: 15px;
+  }
+  .page4 .container4 .skills-content .column-right {
+    width: 80%;
   }
   footer .container5 .contact-container .contact-left form .submit {
     font-size: 15px;
@@ -440,5 +447,95 @@ footer .container5 .contact-container .contact-right label {
   }
   footer .container5 .contact-container .contact-right label {
     font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .page4 .container4 .skills-content .column-left {
+    width: 100%;
+  }
+  footer .container5 .contact-container {
+    flex-direction: column;
+  }
+  footer .container5 .contact-container .contact-left {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  footer .container5 .contact-container .contact-right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .page1 .container1 .text-content h1 {
+    font-size: 30px;
+  }
+  .page2 .container2 .content2 .column-right2 {
+    width: 100%;
+  }
+  .page4 .container4 .skills-content .column-left {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .page1 .container1 .text-content p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 573px) {
+  .page1 .container1 .text-content h1::before {
+    white-space: pre;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .page4 .container4 .skills-content .column-left h2 {
+    font-size: 20px;
+  }
+  .page4 .container4 .skills-content .column-left p {
+    font-size: 15px;
+  }
+  .page4 .container4 .skills-content .column-right {
+    width: 100%;
+  }
+  .page4 .container4 .skills-content .column-right .img-container img {
+    height: 70px;
+  }
+  footer .container5 .contact-container {
+    flex-direction: column;
+  }
+  footer .container5 .contact-container .contact-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 88%;
+  }
+  .title-section {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .container2 h1,
+.container3 h1,
+.container4 h1,
+.container5 h1 {
+    font-size: 25px;
+  }
+  .page2 .container2 .title-section {
+    padding-bottom: 50px;
+  }
+  .page3 .container3 .title-section3 {
+    padding-bottom: 20px;
+  }
+  .page3 .container3 .content3 .column-left3 h2 {
+    font-size: 20px;
+  }
+  .page4 .container4 .title-section {
+    padding: 60px 0 50px 0;
+  }
+  .page4 .container4 .skills-content .column-right .img-container img {
+    height: 60px;
+  }
+  footer .container5 .title-section {
+    padding: 60px 0 50px 0;
   }
 }/*# sourceMappingURL=styles.css.map */
