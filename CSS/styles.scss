@@ -81,7 +81,19 @@ $colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%
         height: 100vh;
         display: flex;
         align-items: center;
+        display: flex;
+        .image-container1{
+            width: 40%;
+            // height: 400px;
+            // background-color: yellow;
+            align-self: flex-end;
+            img{
+                width: 600px;
+            }
+        }
         .text-content{
+            width: 60%;
+            // background-color: #94a187;
             margin-bottom: 30px;
             h1{
                 font-size: 43px;

@@ -80,8 +80,17 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  display: flex;
+}
+.page1 .container1 .image-container1 {
+  width: 40%;
+  align-self: flex-end;
+}
+.page1 .container1 .image-container1 img {
+  width: 600px;
 }
 .page1 .container1 .text-content {
+  width: 60%;
   margin-bottom: 30px;
 }
 .page1 .container1 .text-content h1 {
