@@ -2,6 +2,7 @@
 $colorTheme1: #008726;
 $colorTheme2: #94a187;
 $colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%);
+$colorTheme4: #272d2d;
 *{
     margin: 0;
     padding: 0;
@@ -78,26 +79,16 @@ $colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%
         }
     }
     .container1{
-        height: 100vh;
+        height: 800px;
         display: flex;
         align-items: center;
-        display: flex;
-        .image-container1{
-            width: 40%;
-            // height: 400px;
-            // background-color: yellow;
-            align-self: flex-end;
-            img{
-                width: 600px;
-            }
-        }
         .text-content{
-            width: 60%;
-            // background-color: #94a187;
+            // background-color: gray;
             margin-bottom: 30px;
+            width: 80%;
             h1{
                 font-size: 43px;
-                margin-top: 180px;
+                // margin-top: 90px;
                 color: $colorTheme1;
                 &::before{
                     content: "Hi, my name is \A";
@@ -123,6 +114,19 @@ $colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%
                 border: none; 
                 border-radius: 6px;
                 width: 300px;
+            }
+        }
+        .image-container1{
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+            width: 20%;
+            position: relative;
+            // background-color: #94a187;
+            img{
+                width: 550px;
+                position: absolute;
+                right: -100px;
             }
         }
     }

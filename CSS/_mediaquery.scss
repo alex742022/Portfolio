@@ -12,6 +12,11 @@
             }
         }
         .container1{
+            .image-container1{
+                img{
+
+                }
+            }
             .text-content{
                 h1{
                     span{
@@ -160,7 +165,42 @@
         }
     }
 }
+@media only screen and (max-width: 1250px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+        .container1{
+            .image-container1{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }  
+}
 @media only screen and (max-width: 1200px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
     .page4{
         padding-bottom: 100px;
         .container4{
@@ -182,6 +222,43 @@
         }
     }
 }
+@media only screen and (max-width: 1150px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+        .container1{
+            flex-direction: column-reverse;
+            .text-content{
+                margin-top: 50px;
+                width: 100%;
+                height: 900px;
+            }
+            .image-container1{
+                background-color: $colorTheme4;
+                margin-top: 100px;
+                overflow: hidden;
+                width: 100%;
+                height: 800px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px -5px black;
+                img{
+                    width: 50%;
+                    top: 10px;
+                    right: 0;
+                }
+            }
+        }
+    }  
+}
 @media only screen and (max-width: 1040px){
     .title-section{
         font-size: 35px;
@@ -197,6 +274,12 @@
                 }
                 p{
                     font-size: 16px;
+                }   
+            }
+            .image-container1{
+                height: 680px;
+                img{
+                    width: 50%;
                 }
             }
         }
@@ -224,6 +307,28 @@
     }
 }
 @media only screen and (max-width: 930px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+        
+        .container1{
+            .image-container1{
+                height: 680px;
+                img{
+                    width: 55%;
+                }
+            }
+        }
+    }
     .page2{
         .container2{
             .content2{
@@ -305,6 +410,24 @@
     }
 }
 @media only screen and (max-width: 800px){
+    .page1{
+        .nav-bar{
+            .navbar-content{
+                ul{
+                    a{
+                        li{
+
+                        }
+                    }
+                }
+            }
+        }
+        .container1{
+            .image-container1{
+                height: 600px;
+            }
+        }
+    }  
     .page4{
         .container4{
             .skills-content{
@@ -340,6 +463,12 @@
 
                 }
             }
+            .image-container1{
+                img{
+                    width: 60%;
+                }
+            }
+            
         }
     }
     .page2{
@@ -370,11 +499,18 @@
                 width: 100%;
                }
             }
+            .image-container1{
+                height: 500px;
+                img{
+                    width: 60%;
+                }
+            }
         }
     }
 }
 @media only screen and (max-width: 573px){
     .page1{
+        height: 700px;
         .container1{
             .text-content{
               h1{
@@ -383,10 +519,23 @@
                }
               }
             }
+            .image-container1{
+                img{
+                    width: 320px;
+                }
+            }
         }
     }
 }
 @media only screen and (max-width: 550px){
+    .page1{
+        .container1{
+            .image-container1{
+                height: 400px;
+            }
+            
+        }
+    }
     .page4{
         .container4{
             .skills-content{
@@ -450,14 +599,9 @@
             }
         }
         .container1{
-            .text-content{
-                h1{
-                    span{
-
-                    }
-                }
-                button{
-
+            .image-container1{
+                img{
+                    width: 300px;
                 }
             }
         }
