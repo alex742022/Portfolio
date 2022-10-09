@@ -513,29 +513,27 @@
         height: 700px;
         .container1{
             .text-content{
+                margin-top: 20px;
+                height: 600px;
               h1{
                &::before{
                 white-space: pre;
                }
               }
+              button{
+                margin: 50px 0 120px 0;
+              }
             }
             .image-container1{
+                height: 300px;
                 img{
-                    width: 320px;
+                    width: 300px;
                 }
             }
         }
     }
 }
 @media only screen and (max-width: 550px){
-    .page1{
-        .container1{
-            .image-container1{
-                height: 400px;
-            }
-            
-        }
-    }
     .page4{
         .container4{
             .skills-content{
@@ -599,9 +597,15 @@
             }
         }
         .container1{
+            .text-content{
+              button{
+                width: 100%;
+              }
+            }
             .image-container1{
+                height: 280px;
                 img{
-                    width: 300px;
+                    width: 220px;
                 }
             }
         }
