@@ -77,6 +77,20 @@ $colorTheme4: #272d2d;
                 }
             }
         }
+        .bar-container{
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            .bar{
+                font-size: 25px;
+                display: none;
+            }
+            .xmark{
+                display: none;
+                font-size: 25px;
+            }
+            
+        }
     }
     .container1{
         height: 800px;
@@ -122,6 +136,7 @@ $colorTheme4: #272d2d;
             height: 100%;
             width: 20%;
             position: relative;
+            z-index: -1;
             // background-color: #94a187;
             img{
                 width: 550px;
