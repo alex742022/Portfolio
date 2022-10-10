@@ -16,3 +16,19 @@ window.addEventListener('scroll',() => {
             }
     }
 });
+
+const barIcon = document.querySelector(".bar");
+const navbarContainer = document.querySelector(".navbar-content");
+const xIcon = document.querySelector(".xmark");
+
+barIcon.addEventListener("click", () =>{
+    navbarContainer.style.transform = "none";
+    xIcon.style.display = "block";
+    barIcon.style.display = "none";
+});
+
+xIcon.addEventListener("click", () =>{
+    navbarContainer.style.transform = "translateX(100%)";
+    barIcon.style.display = "block";
+    xIcon.style.display = "none";
+})
