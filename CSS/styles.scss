@@ -26,17 +26,17 @@ $colorTheme4: #272d2d;
 .reveal {
     opacity: 0;
     transform: translateX(-30px);
-    transition: all .7s .2s ease-in-out;
+    transition: all .3s .2s ease-in-out;
 }
 .reveal1{
     opacity: 0;
     transform: translateY(-30px);
-    transition: all .7s .2s ease-in-out;
+    transition: all .3s .2s ease-in-out;
 }
 .reveal2{
     opacity: 0;
     transform: translateY(30px);
-    transition: all .7s .2s ease-in-out;
+    transition: all .3s .2s ease-in-out;
 }
 .active {
     opacity: 1;
@@ -88,8 +88,7 @@ $colorTheme4: #272d2d;
             .xmark{
                 display: none;
                 font-size: 25px;
-            }
-            
+            } 
         }
     }
     .container1{
@@ -97,12 +96,10 @@ $colorTheme4: #272d2d;
         display: flex;
         align-items: center;
         .text-content{
-            // background-color: gray;
             margin-bottom: 30px;
             width: 80%;
             h1{
                 font-size: 43px;
-                // margin-top: 90px;
                 color: $colorTheme1;
                 &::before{
                     content: "Hi, my name is \A";
@@ -137,7 +134,6 @@ $colorTheme4: #272d2d;
             width: 20%;
             position: relative;
             z-index: -1;
-            // background-color: #94a187;
             img{
                 width: 550px;
                 position: absolute;
@@ -187,7 +183,6 @@ $colorTheme4: #272d2d;
                 }
             }
             .column-right2{
-                transition: all 1s .3s ease-in-out;
                 width: 550px;
                 .text{
                     line-height: 25px;
