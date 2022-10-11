@@ -125,6 +125,7 @@ $colorTheme4: #272d2d;
                 border: none; 
                 border-radius: 6px;
                 width: 300px;
+                cursor: pointer;
             }
         }
         .image-container1{
@@ -377,6 +378,10 @@ footer{
                 span{
                     font-size: 20px;
                 }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
                 i{
                     margin: 20px 10px 0 0;
                     font-size: 30px;
@@ -387,6 +392,7 @@ footer{
                 }
                 label{
                     font-weight: 500;
+                    cursor: pointer;
                 }
             }
         }
