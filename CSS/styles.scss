@@ -56,6 +56,15 @@ $colorTheme4: #272d2d;
         z-index: 10;
         backdrop-filter: blur(10px);
         box-shadow: 0 1px 9px -5px gray;
+        animation: navAnimation .3s ease-in-out forwards;
+        @keyframes navAnimation{
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: none;
+            }
+        }
         .navbar-content{
             width: 90%;
             height: 100%;
@@ -98,6 +107,17 @@ $colorTheme4: #272d2d;
         .text-content{
             margin-bottom: 30px;
             width: 80%;
+            animation: textAnimation .3s .1s ease-in-out forwards;
+            @keyframes textAnimation{
+                0%{
+                    transform: translateX(-10%);
+                    opacity: 0;
+                }
+                100%{
+                    transform: none;
+                    opacity: 1;
+                }
+            }
             h1{
                 font-size: 43px;
                 color: $colorTheme1;
@@ -139,6 +159,17 @@ $colorTheme4: #272d2d;
                 width: 550px;
                 position: absolute;
                 right: -100px;
+                animation: imgAnimation .3s .1s ease-in-out forwards;
+                @keyframes imgAnimation{
+                    0%{
+                        transform: translateY(10%);
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: none;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
