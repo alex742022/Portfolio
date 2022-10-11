@@ -1,6 +1,5 @@
+//Scroll Animation
 window.addEventListener('scroll',() => {
-    // var navBar = document.querySelector('.nav-bar');
-    // navBar.classList.toggle('nav-bar2', windo)
     var  reveals = document.querySelectorAll('.reveal, .reveal1, .reveal2');
     for (var i = 0; i < reveals.length; i++){
 
@@ -17,6 +16,7 @@ window.addEventListener('scroll',() => {
     }
 });
 
+// Nav Animation
 const barIcon = document.querySelector(".bar");
 const navbarContainer = document.querySelector(".navbar-content");
 const xIcon = document.querySelector(".xmark");
@@ -32,3 +32,12 @@ xIcon.addEventListener("click", () =>{
     barIcon.style.display = "block";
     xIcon.style.display = "none";
 })
+
+// Waiting function | till the content is ready  
+const loadingContainer = document.querySelector(".loading-container");
+const displayContainer = document.querySelector(".display-container");
+window.addEventListener("load", showPage);
+function showPage() {
+    displayContainer.style.display = "block";
+    loadingContainer.style.display ="none";
+}
