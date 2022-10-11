@@ -10,6 +10,48 @@ $colorTheme4: #272d2d;
     font-family: 'Montserrat','Inter Tight', sans-serif;
     scroll-behavior: smooth;
 }
+.loading-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        margin-left: 8px;
+        border-radius: 50%;
+        animation: circleanimation 1s ease-out infinite;
+    }
+     .loading1 {
+        animation-delay: .3s
+    }
+     .loading2 {
+        animation-delay: .6s
+    }
+     .loading3 {
+        animation-delay: .8s
+    }
+     .loading4 {
+        animation-delay: 1s
+    }
+    @keyframes circleanimation{
+        0%, 80%, 100%{
+            transform: scale(0);
+        }
+        40% {
+            transform: scale(1.0);
+        }   
+    
+    }
+}
+/* Waiting function | till the content is ready */
+.display-container{
+    display: none;
+}
+
 //Container style to all
 .container{
     margin: 0 auto;
