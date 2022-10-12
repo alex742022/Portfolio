@@ -153,13 +153,9 @@
   position: absolute;
   top: 15px;
   right: 20px;
+  display: none;
 }
 .page1 .nav-bar .bar-container .bar {
-  font-size: 25px;
-  display: none;
-}
-.page1 .nav-bar .bar-container .xmark {
-  display: none;
   font-size: 25px;
 }
 .page1 .container1 {
@@ -543,12 +539,11 @@ footer .container5 .contact-container .contact-right label {
             backdrop-filter: blur(10px);
     width: 300px;
     height: 400px;
-    right: 0;
+    right: -100%;
     justify-content: center;
     border-radius: 6px;
     box-shadow: -1px 1px 10px -5px black;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
   .page1 .nav-bar .navbar-content ul {
     flex-direction: column;
@@ -560,8 +555,14 @@ footer .container5 .contact-container .contact-right label {
   .page1 .nav-bar .navbar-content ul a li {
     margin: 40px 0 0 0;
   }
-  .page1 .nav-bar .bar-container .bar {
+  .page1 .nav-bar .bar-container {
     display: block;
+  }
+  .page1 .nav-bar .nav-active {
+    right: 0;
+  }
+  .page1 .nav-bar .xmark-active::before {
+    content: "\f00d";
   }
   .page1 .container1 {
     flex-direction: column-reverse;
