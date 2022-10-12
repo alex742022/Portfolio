@@ -17,23 +17,24 @@ window.addEventListener('scroll',() => {
 });
 
 // Nav Animation
-const barIcon = document.querySelector(".bar");
+const barIcontainer = document.querySelector(".bar-container");
 const navbarContainer = document.querySelector(".navbar-content");
-const xIcon = document.querySelector(".xmark");
+const barIcon = document.querySelector(".bar");
 
-barIcon.addEventListener("click", () =>{
-    navbarContainer.style.transform = "none";
-    xIcon.style.display = "block";
-    barIcon.style.display = "none";
+barIcontainer.addEventListener("click", () =>{
+    navbarContainer.classList.toggle("nav-active");
+    barIcon.classList.toggle("xmark-active");
+    // xIcon.style.display = "block";
+    // barIcon.style.display = "none";
 });
 
-xIcon.addEventListener("click", () =>{
-    navbarContainer.style.transform = "translateX(100%)";
-    barIcon.style.display = "block";
-    xIcon.style.display = "none";
-})
+// xIcon.addEventListener("click", () =>{
+//     navbarContainer.style.right = "-100%";
+//     barIcon.style.display = "block";
+//     xIcon.style.display = "none";
+// })
 
-// Waiting function | till the content is ready  
+// // Waiting function | till the content is ready  
 const loadingContainer = document.querySelector(".loading-container");
 const displayContainer = document.querySelector(".display-container");
 window.addEventListener("load", showPage);
