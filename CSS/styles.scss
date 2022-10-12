@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 $colorTheme1: #008726;
-$colorTheme2: #94a187;
+$colorTheme2: #32b92c   ;
 $colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%);
 $colorTheme4: #272d2d;
 
@@ -115,10 +115,12 @@ $colorTheme4: #272d2d;
             justify-items: center;
             align-items: center;
             justify-content: flex-end;
+            position: relative;
             ul{
                 display: flex;
                 list-style: none;
                 font-weight: 450;
+                margin-right: 30px;
                 a{
                     text-decoration: none;
                     color: black;    
@@ -127,6 +129,42 @@ $colorTheme4: #272d2d;
                         font-weight: 500;
                     }
                 }
+            }
+            .theme-button{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: orange;
+            }
+            .theme-container{
+                position: absolute;
+                width: 30px;
+                height: 0px;
+                box-shadow: -1px 1px 10px -5px black;
+                background-color: white;
+                top: 55px;
+                right: -5px;
+                transition: height .3s ease-in-out;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                .color-reset{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: green;
+                }
+                .color1{
+                    width: 20px;
+                    height: 20px;
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+            .theme-container-active{
+                height: 200px;
             }
         }
         .bar-container{
@@ -177,7 +215,7 @@ $colorTheme4: #272d2d;
             }
             button{
                 margin-top: 20px;
-                background: $colorTheme3;
+                background: var(--colorTheme3, $colorTheme3);
                 color: white;
                 padding: 15px 20px 15px 20px;
                 font-size: 20px;
@@ -217,7 +255,7 @@ $colorTheme4: #272d2d;
 //Page2
 .page2 {
     width: 100%;
-    background: $colorTheme1;
+    background: var(--colorTheme1, $colorTheme1);
     color: white;
     overflow: hidden;
     padding-bottom: 150px;
@@ -299,7 +337,7 @@ $colorTheme4: #272d2d;
                         bottom: 0;
                         width: 100%;
                         height: 100%;
-                        background: $colorTheme3;
+                        background: var(--colorTheme3, $colorTheme3);
                         transition: transform 1s ease;
                     }
                     &:hover::before{
@@ -331,7 +369,7 @@ $colorTheme4: #272d2d;
                     color: white;
                     font-size: 14px;
                     cursor: pointer;
-                    background: $colorTheme1;
+                    background: var(--colorTheme1, $colorTheme1);
                     border-radius: 6px;
                     transition: transform .3s ease;
                     &:hover{
@@ -365,7 +403,7 @@ $colorTheme4: #272d2d;
     }
 }
 .page4{
-    background: $colorTheme1;
+    background: var(--colorTheme1, $colorTheme1);
     color: white;
     padding-bottom: 150px;
     .container4{
@@ -427,7 +465,7 @@ footer{
                     border-bottom: 2px solid black;
                 }
                 .submit{
-                    background: $colorTheme3;
+                    background: var(--colorTheme3, $colorTheme3);
                     width: 130px;
                     font-size: 18px;
                     padding: 9px;

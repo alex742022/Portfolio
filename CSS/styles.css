@@ -135,11 +135,13 @@
   justify-items: center;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
 .page1 .nav-bar .navbar-content ul {
   display: flex;
   list-style: none;
   font-weight: 450;
+  margin-right: 30px;
 }
 .page1 .nav-bar .navbar-content ul a {
   text-decoration: none;
@@ -148,6 +150,42 @@
 .page1 .nav-bar .navbar-content ul a li {
   margin-left: 60px;
   font-weight: 500;
+}
+.page1 .nav-bar .navbar-content .theme-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+}
+.page1 .nav-bar .navbar-content .theme-container {
+  position: absolute;
+  width: 30px;
+  height: 0px;
+  box-shadow: -1px 1px 10px -5px black;
+  background-color: white;
+  top: 55px;
+  right: -5px;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page1 .nav-bar .navbar-content .theme-container .color-reset {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+.page1 .nav-bar .navbar-content .theme-container .color1 {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.page1 .nav-bar .navbar-content .theme-container-active {
+  height: 200px;
 }
 .page1 .nav-bar .bar-container {
   position: absolute;
@@ -191,7 +229,7 @@
 }
 .page1 .container1 .text-content h1 {
   font-size: 43px;
-  color: #008726;
+  color: var(--colorTheme1, #008726);
 }
 .page1 .container1 .text-content h1::before {
   content: "Hi, my name is \a";
@@ -209,7 +247,7 @@
 }
 .page1 .container1 .text-content button {
   margin-top: 20px;
-  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
+  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   color: white;
   padding: 15px 20px 15px 20px;
   font-size: 20px;
@@ -256,7 +294,7 @@
 
 .page2 {
   width: 100%;
-  background: #008726;
+  background: var(--colorTheme1, #008726);
   color: white;
   overflow: hidden;
   padding-bottom: 150px;
@@ -337,7 +375,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
+  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   transition: transform 1s ease;
 }
 .page3 .project-flex-content .left-width .btn-container .project-btn:hover::before {
@@ -368,7 +406,7 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
-  background: #008726;
+  background: var(--colorTheme1, #008726);
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
@@ -394,7 +432,7 @@
 }
 
 .page4 {
-  background: #008726;
+  background: var(--colorTheme1, #008726);
   color: white;
   padding-bottom: 150px;
 }
@@ -454,7 +492,7 @@ footer .container5 .contact-container .contact-left input, footer .container5 .c
   border-bottom: 2px solid black;
 }
 footer .container5 .contact-container .contact-left .submit {
-  background: linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%);
+  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   width: 130px;
   font-size: 18px;
   padding: 9px;
