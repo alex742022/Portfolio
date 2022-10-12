@@ -42,3 +42,20 @@ function showPage() {
     displayContainer.style.display = "block";
     loadingContainer.style.display ="none";
 }
+
+//colorThme Manipulate function
+
+const themeButton = document.querySelector(".theme-button");
+const themeContainer = document.querySelector(".theme-container");
+themeButton.addEventListener("click", () => {
+    themeContainer.classList.toggle("theme-container-active");
+})
+
+const colorOne = document.querySelector(".color1");
+colorOne.addEventListener("click", () => {
+    // const color3 = "linear-gradient(90deg, rgba(93,112,127,1) 0%, rgba(109,138,150,1) 100%)";
+    const colorTheme1 = "#841c26";
+    const colorTheme3 = "linear-gradient(90deg, rgba(132,28,38,1) 0%, rgba(237,123,132,1) 100%)";
+    document.documentElement.style.setProperty("--colorTheme3", colorTheme3);
+    document.documentElement.style.setProperty("--colorTheme1", colorTheme1);
+});
