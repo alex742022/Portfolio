@@ -24,17 +24,9 @@ const barIcon = document.querySelector(".bar");
 barIcontainer.addEventListener("click", () =>{
     navbarContainer.classList.toggle("nav-active");
     barIcon.classList.toggle("xmark-active");
-    // xIcon.style.display = "block";
-    // barIcon.style.display = "none";
 });
 
-// xIcon.addEventListener("click", () =>{
-//     navbarContainer.style.right = "-100%";
-//     barIcon.style.display = "block";
-//     xIcon.style.display = "none";
-// })
-
-// // Waiting function | till the content is ready  
+// Waiting function | till the content is ready  
 const loadingContainer = document.querySelector(".loading-container");
 const displayContainer = document.querySelector(".display-container");
 window.addEventListener("load", showPage);
@@ -51,11 +43,38 @@ themeButton.addEventListener("click", () => {
     themeContainer.classList.toggle("theme-container-active");
 })
 
+//Reset themeColor Function
+const colorReset = document.querySelector(".color-reset");
+colorReset.addEventListener("click", () => {
+    const colorThemeTwo1 = "#008726";
+    const colorThemeTwo3 = "linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%)";
+    document.documentElement.style.setProperty("--colorThemeOne1", colorThemeTwo1);
+    document.documentElement.style.setProperty("--colorThemeOne3", colorThemeTwo3);
+});
+
+// colorOne Theme Function
 const colorOne = document.querySelector(".color1");
 colorOne.addEventListener("click", () => {
-    // const color3 = "linear-gradient(90deg, rgba(93,112,127,1) 0%, rgba(109,138,150,1) 100%)";
-    const colorTheme1 = "#841c26";
-    const colorTheme3 = "linear-gradient(90deg, rgba(132,28,38,1) 0%, rgba(237,123,132,1) 100%)";
-    document.documentElement.style.setProperty("--colorTheme3", colorTheme3);
-    document.documentElement.style.setProperty("--colorTheme1", colorTheme1);
+    const colorThemeTwo1 = "#841c26";
+    const colorThemeTwo3 = "linear-gradient(90deg, rgba(132,28,38,1) 0%, rgba(237,123,132,1) 100%)";
+    document.documentElement.style.setProperty("--colorThemeOne1", colorThemeTwo1);
+    document.documentElement.style.setProperty("--colorThemeOne3", colorThemeTwo3);
+});
+
+// colorTwo Theme Function
+const colorTwo = document.querySelector(".color2");
+colorTwo.addEventListener("click", () => {
+    const colorThemeTwo1 = "#5f0f40";
+    const colorThemeTwo3 = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,15,64,1) 35%, rgba(200,128,183,1) 100%)";
+    document.documentElement.style.setProperty("--colorThemeOne1", colorThemeTwo1);
+    document.documentElement.style.setProperty("--colorThemeOne3", colorThemeTwo3);
+});
+
+// colorThree Theme Function
+const colorThree = document.querySelector(".color3");
+colorThree.addEventListener("click", () => {
+    const colorThemeTwo1 = "#440381";
+    const colorThemeTwo3 = "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,3,129,1) 35%, rgba(109,152,186,1) 100%)";
+    document.documentElement.style.setProperty("--colorThemeOne1", colorThemeTwo1);
+    document.documentElement.style.setProperty("--colorThemeOne3", colorThemeTwo3);
 });
