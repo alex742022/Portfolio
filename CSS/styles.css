@@ -605,7 +605,7 @@ footer .container5 .contact-container .contact-right label {
   .page1 .nav-bar .navbar-content .theme-container {
     height: 200px;
     box-shadow: none;
-    background-color: none;
+    background-color: transparent;
     right: 13px;
   }
   .page1 .nav-bar .bar-container {
