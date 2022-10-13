@@ -97,7 +97,7 @@ $colorThemeFour1:#440381;
         top: 0;
         bottom: 0;
         right: 0;
-        height: 50px;
+        height: 60px;
         background: white;
         z-index: 10;
         backdrop-filter: blur(10px);
@@ -109,6 +109,14 @@ $colorThemeFour1:#440381;
             }
             100%{
                 transform: none;
+            }
+        }
+        .logo-container{
+            position: absolute;
+            margin-left: 8%;
+            top: 8px;
+            img{
+                width: 45px;
             }
         }
         .navbar-content{
