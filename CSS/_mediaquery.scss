@@ -239,7 +239,7 @@
                 ul{
                     flex-direction: column;
                     align-items: center;
-                    margin-top: 50px;
+                    margin: 50px 0 0 0;
                     width: 100%;
                     height: 100%;
                     a{
@@ -247,6 +247,15 @@
                             margin: 40px 0 0 0;
                         }
                     }
+                }
+                .theme-button{
+                    display: none;
+                }
+                .theme-container{
+                    height:200px;
+                    box-shadow: none;
+                    background-color: none;
+                    right: 13px;
                 }
             }
             .bar-container{
