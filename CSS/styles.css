@@ -10,7 +10,7 @@
 .loading-container {
   width: 100%;
   height: 100vh;
-  background-color: #313131;
+  background-color: #272d2d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,17 +172,22 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.page1 .nav-bar .navbar-content .theme-container .color-reset {
+.page1 .nav-bar .navbar-content .theme-container .color {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: green;
+}
+.page1 .nav-bar .navbar-content .theme-container .color-reset {
+  background-color: #008726;
 }
 .page1 .nav-bar .navbar-content .theme-container .color1 {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border-radius: 50%;
+  background-color: #841c26;
+}
+.page1 .nav-bar .navbar-content .theme-container .color2 {
+  background-color: #5f0f40;
+}
+.page1 .nav-bar .navbar-content .theme-container .color3 {
+  background-color: #440381;
 }
 .page1 .nav-bar .navbar-content .theme-container-active {
   height: 200px;
@@ -229,7 +234,7 @@
 }
 .page1 .container1 .text-content h1 {
   font-size: 43px;
-  color: var(--colorTheme1, #008726);
+  color: var(--colorThemeOne1, #008726);
 }
 .page1 .container1 .text-content h1::before {
   content: "Hi, my name is \a";
@@ -247,7 +252,7 @@
 }
 .page1 .container1 .text-content button {
   margin-top: 20px;
-  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
+  background: var(--colorThemeOne3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   color: white;
   padding: 15px 20px 15px 20px;
   font-size: 20px;
@@ -294,7 +299,7 @@
 
 .page2 {
   width: 100%;
-  background: var(--colorTheme1, #008726);
+  background: var(--colorThemeOne1, #008726);
   color: white;
   overflow: hidden;
   padding-bottom: 150px;
@@ -375,7 +380,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
+  background: var(--colorThemeOne3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   transition: transform 1s ease;
 }
 .page3 .project-flex-content .left-width .btn-container .project-btn:hover::before {
@@ -406,7 +411,7 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
-  background: var(--colorTheme1, #008726);
+  background: var(--colorThemeOne1, #008726);
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
@@ -432,7 +437,7 @@
 }
 
 .page4 {
-  background: var(--colorTheme1, #008726);
+  background: var(--colorThemeOne1, #008726);
   color: white;
   padding-bottom: 150px;
 }
@@ -492,7 +497,7 @@ footer .container5 .contact-container .contact-left input, footer .container5 .c
   border-bottom: 2px solid black;
 }
 footer .container5 .contact-container .contact-left .submit {
-  background: var(--colorTheme3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
+  background: var(--colorThemeOne3, linear-gradient(90deg, rgb(0, 135, 38) 0%, rgb(50, 185, 44) 100%));
   width: 130px;
   font-size: 18px;
   padding: 9px;

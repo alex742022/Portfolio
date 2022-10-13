@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-$colorTheme1: #008726;
-$colorTheme2: #32b92c   ;
-$colorTheme3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%);
-$colorTheme4: #272d2d;
-
+$colorThemeOne1: #008726;
+$colorThemeOne2: #32b92c;
+$colorThemeOne3: linear-gradient(90deg, rgba(0,135,38,1) 0%, rgba(50,185,44,1) 100%);
+$colorThemeOne4: #272d2d;
+$themeButtonColor: orange;
+$colorThemeTwo1: #841c26;
+$colorThemeThree1: #5f0f40;
+$colorThemeFour1:#440381;
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +17,7 @@ $colorTheme4: #272d2d;
 .loading-container {
     width: 100%;
     height: 100vh;
-    background-color: #313131;
+    background-color: $colorThemeOne4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +137,7 @@ $colorTheme4: #272d2d;
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
-                background-color: orange;
+                background-color: $themeButtonColor;
             }
             .theme-container{
                 position: absolute;
@@ -150,17 +153,23 @@ $colorTheme4: #272d2d;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                .color-reset{
+                
+                .color{
                     width: 20px;
                     height: 20px;
                     border-radius: 50%;
-                    background-color: green;
+                }
+                .color-reset{
+                    background-color: $colorThemeOne1;
                 }
                 .color1{
-                    width: 20px;
-                    height: 20px;
-                    background-color: black;
-                    border-radius: 50%;
+                    background-color: $colorThemeTwo1;
+                }
+                .color2{
+                    background-color: $colorThemeThree1;
+                }
+                .color3{
+                    background-color: $colorThemeFour1;
                 }
             }
             .theme-container-active{
@@ -197,7 +206,7 @@ $colorTheme4: #272d2d;
             }
             h1{
                 font-size: 43px;
-                color: var(--colorTheme1, $colorTheme1);
+                color: var(--colorThemeOne1, $colorThemeOne1);
                 &::before{
                     content: "Hi, my name is \A";
                     color: black;
@@ -215,7 +224,7 @@ $colorTheme4: #272d2d;
             }
             button{
                 margin-top: 20px;
-                background: var(--colorTheme3, $colorTheme3);
+                background: var(--colorThemeOne3, $colorThemeOne3);
                 color: white;
                 padding: 15px 20px 15px 20px;
                 font-size: 20px;
@@ -255,7 +264,7 @@ $colorTheme4: #272d2d;
 //Page2
 .page2 {
     width: 100%;
-    background: var(--colorTheme1, $colorTheme1);
+    background: var(--colorThemeOne1, $colorThemeOne1);
     color: white;
     overflow: hidden;
     padding-bottom: 150px;
@@ -337,7 +346,7 @@ $colorTheme4: #272d2d;
                         bottom: 0;
                         width: 100%;
                         height: 100%;
-                        background: var(--colorTheme3, $colorTheme3);
+                        background: var(--colorThemeOne3, $colorThemeOne3);
                         transition: transform 1s ease;
                     }
                     &:hover::before{
@@ -369,7 +378,7 @@ $colorTheme4: #272d2d;
                     color: white;
                     font-size: 14px;
                     cursor: pointer;
-                    background: var(--colorTheme1, $colorTheme1);
+                    background: var(--colorThemeOne1, $colorThemeOne1);
                     border-radius: 6px;
                     transition: transform .3s ease;
                     &:hover{
@@ -403,7 +412,7 @@ $colorTheme4: #272d2d;
     }
 }
 .page4{
-    background: var(--colorTheme1, $colorTheme1);
+    background: var(--colorThemeOne1, $colorThemeOne1);
     color: white;
     padding-bottom: 150px;
     .container4{
@@ -465,7 +474,7 @@ footer{
                     border-bottom: 2px solid black;
                 }
                 .submit{
-                    background: var(--colorTheme3, $colorTheme3);
+                    background: var(--colorThemeOne3, $colorThemeOne3);
                     width: 130px;
                     font-size: 18px;
                     padding: 9px;
